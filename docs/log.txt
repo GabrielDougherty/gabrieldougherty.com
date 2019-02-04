@@ -1,0 +1,79 @@
+*logging*
+
+* Week of <2018-03-05 Mon>
+
+** Online meeting about requirements from 7pm to 8:40 (1hr 40mins) on <2018-03-05 Mon>
+
+** Meeting with Dr. Bennett on <2018-03-07 Wed> from 4:15pm to 5pm (45mins)
+
+** writing notes after that on <2018-03-07 Wed> from 5pm to 5:30pm (30mins)
+
+* Week of <2018-03-19 Mon>
+** Planned for meeting and future, read Brandon notes
+   CLOCK: [2018-03-19 Mon 14:00]--[2018-03-19 Mon 14:50] =>  0:50
+** Meeting <2018-03-19 Mon>
+   CLOCK: [2018-03-19 Mon 16:15]--[2018-03-19 Mon 16:40] =>  0:25
+** Implemented feature in program
+   CLOCK: [2018-03-19 Mon 23:30]--[2018-03-20 Tue 00:20] =>  0:50
+** More fixes and documentation
+   CLOCK: [2018-03-20 Tue 16:00]--[2018-03-20 Tue 17:00] =>  1:00
+** More programming and testing, bug report
+   CLOCK: [2018-03-20 Tue 19:40]--[2018-03-20 Tue 21:00] =>  1:20
+** Documentation
+   CLOCK: [2018-03-20 Tue 21:36]--[2018-03-20 Tue 22:09] =>  0:33
+   CLOCK: [2018-03-20 Tue 21:07]--[2018-03-20 Tue 21:42] =>  0:35
+** Cookie work
+   CLOCK: [2018-03-21 Wed 12:56]--[2018-03-21 Wed 14:44] =>  1:48
+
+* Week of <2018-03-25 Sun>
+
+** Testing gitlab-api
+   CLOCK: [2018-03-25 Sun 23:13]--[2018-03-25 Sun 23:23] =>  0:10
+   CLOCK: [2018-03-25 Sun 17:12]--[2018-03-25 Sun 17:48] =>  0:36
+
+** Got adding users to group working. Still need to handle non existing users
+   CLOCK: [2018-03-27 Tue 21:00]--[2018-03-27 Tue 21:47] =>  0:47
+
+** Planning for tomorrow's meeting, making steps toward GitLab code usable in actual program
+   CLOCK: [2018-03-27 Tue 22:25]--[2018-03-27 Tue 23:26] =>  1:01
+
+** Talked to Chris Loveland about department CSV file, more programming w/ integration
+   CLOCK: [2018-03-28 Wed 12:14]--[2018-03-28 Wed 14:49] =>  2:35
+
+** Group meeting to work, discussing what to program next with Josh, worked with DeAndre
+   CLOCK: [2018-03-28 Wed 16:17]--[2018-03-28 Wed 17:39] =>  1:22
+
+** Group leader meeting
+   CLOCK: [2018-03-30 Fri 12:00]--[2018-03-30 Fri 12:45] =>  0:45
+
+** Programming work on adding users to projects
+   CLOCK: [2018-03-31 Sat 19:18]--[2018-03-31 Sat 21:09] =>  1:51
+   CLOCK: [2018-03-31 Sat 15:30]--[2018-03-31 Sat 18:16] =>  2:46
+
+** Meeting with Will and Josh to work through some code specifics on SDS
+   CLOCK: [2018-04-02 Mon 16:15]--[2018-04-02 Mon 16:50] =>  0:35
+
+** Online meeting to update Brandon
+   CLOCK: [2018-04-02 Mon 17:10]--[2018-04-02 Mon 17:20] =>  0:10
+
+* Week of <2018-04-09 Mon>
+
+** Review Will's work on SDS
+   CLOCK: [2018-04-09 Mon 23:59]--[2018-04-10 Tue 01:03] =>  1:04
+
+** Add instructions to simple_gitlab and fix searching
+   CLOCK: [2018-04-10 Tue 15:40]--[2018-04-10 Tue 17:00] =>  1:20
+
+** Online meeting with Josh to discuss requirements for the group project script
+   CLOCK: [2018-04-12 Thu 13:15]--[2018-04-12 Thu 13:50] =>  0:35
+
+* Week of <2018-04-16 Mon>
+
+** Review Josh's code and discuss features
+   CLOCK: [2018-04-16 Mon 20:22]--[2018-04-16 Mon 21:32] =>  1:10
+
+* Week of <2018-04-23 Mon>
+
+** 1hr Meeting on monday 20mins
+
+** Work with Troy and DeAndre <2018-04-24 Tue> ~1hr

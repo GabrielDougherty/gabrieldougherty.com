@@ -1,0 +1,23 @@
+body {
+  color: #424242;
+  font-family: arial, helvetica, verdana;
+  padding-left: 2%;
+  padding-top: 2%;
+}
+
+h1, h2 {
+  color: #212121;
+}
+
+a {
+  color: #424242;
+}
+
+ul {
+  list-style-type: square;
+}
+
+li {
+  margin: 5px;
+}
+
