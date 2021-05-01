@@ -104,7 +104,9 @@ Then the same operation is as easy as:
 desktop-image-switcher "/System/Library/Desktop Pictures/Peak.heic" 3
 ```
 
-I used the same approach as before, the only difference being I inlined the AppleScript into the zsh script and wrote them to temp files. That way the script is self-contained.
+The first argument is the image to set, the second argument is the number of desktops. If you don't specify a number of desktops, desktop-image-switcher will default to 5.
+
+With this utility, I used the same approach as before, the only difference being I inlined the AppleScript into the zsh script and wrote them to temp files. That way the script is self-contained.
 
 [^1]: https://apple.stackexchange.com/a/333016/416280
 [^2]: https://apple.stackexchange.com/a/415790/416280
