@@ -1,7 +1,7 @@
 ---
 title: "MacOS Big Sur 11.3: Change desktop background image for all desktops"
 date: 2021-05-01T14:08:40-04:00
-draft: true
+draft: false
 ---
 
 If you just want the solution, it's at the very bottom.
