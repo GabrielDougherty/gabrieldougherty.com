@@ -50,7 +50,7 @@ Looking for updates
 error: com.spotify.Client not installed
 ```
 
-This was confusing because I already knew by checking `flatpak list` that Spotify was in fact installed. I Googled around and found this [issue](https://github.com/flatpak/flatpak-docs/issues/220) from 2020 which described my problem exactly. It turns out that I only need to run `flatpak update` as `sudo` if I had installed the application.
+This was confusing because I already knew by checking `flatpak list` that Spotify was in fact installed. I Googled around and found this [issue](https://github.com/flatpak/flatpak-docs/issues/220) from 2020 which described my problem exactly. It turns out that I only need to run `flatpak update` as `sudo` if I had installed the application globally.
 
 So I ran the command without `sudo`:
 
