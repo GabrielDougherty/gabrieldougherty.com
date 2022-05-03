@@ -26,7 +26,7 @@ flatpak remote-info --log flathub com.spotify.Client | less
 
 I piped into `less` because the command spat out a lot of output and I only wanted to see the beginning, the most recent commits.
 
-I picked a command hash from a week ago, which was a known good version I had been using. I went about downgrading to that version. According the the documentation at time of writing, I downgrade an application by running:
+I picked a command hash from a week ago, which was a known good version I had been using. I went about downgrading to that version. According to the documentation at time of writing, I downgrade an application by running:
 
 ```
 sudo flatpak update \
@@ -55,7 +55,7 @@ This was confusing because I already knew by checking `flatpak list` that Spotif
 So I ran the command without `sudo`:
 
 ```
-sudo flatpak update \
+flatpak update \
 --commit=4971174bdf1e863ebbc18651efd330eed5de28f917342e518fc116c88e7d723c
 \
 com.spotify.Client
