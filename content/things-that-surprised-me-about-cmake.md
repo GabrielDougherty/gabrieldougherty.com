@@ -82,7 +82,7 @@ This is a bit of an odd programming language feature, since the function decides
 
 # find_package() must be called after project()
 
-I recently had CMake a project I was developing at home where I had just made the project and installed SDL2 with vcpkg on Windows and I did something like this:
+I recently had a CMake project I was developing at home where I had just made the project and installed SDL2 with vcpkg on Windows and I did something like this:
 
 ```
 cmake_minimum_required (VERSION 3.8)
@@ -109,3 +109,24 @@ add_subdirectory("src")
 ```
 
 I didn't notice anything in the documentation for find_package() or project() about this behavior, but maybe I just missed something. In any case, I found it surprising :-)
+
+# Variable names
+
+If you write a variable like $VARNAME instead of ${VARNAME} it will work with CMake + Make, but will break when you switch to the Ninja generator.
+
+# Missing libraries
+
+CMake won't complain about a missing or misspelled library in target_link_libraries
+
+```
+target_link_libraries(
+        MyLib
+    PRIVATE
+        hellowhatsup # invalid lib name
+)
+
+```
+
+will build fine.
+
+> Update July 24: fixed grammar, added note about variable names and missing libraries.
