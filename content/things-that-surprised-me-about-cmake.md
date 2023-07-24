@@ -6,7 +6,7 @@ draft: false
 
 # Intro
 
-In my current job for the past year I have been using CMake for all my C++ development, working on financial software in a large-ish CMake project with hundreds of executable targets and around 80kLoC. In the course of getting up to speed on CMake, I ran into some things that surprised me.
+In my current job for the past year I have been using CMake for all my C++ development, working on financial software in a large CMake project with hundreds of executable targets and around 3 million LoC. In the course of getting up to speed on CMake, I ran into some things that surprised me.
 
 ![Warped CMake Screenshot](/warped-cmake-screenshot.png#l)
 
@@ -129,4 +129,4 @@ target_link_libraries(
 
 will build fine.
 
-> Update July 24: fixed grammar, added note about variable names and missing libraries.
+> Update July 24: LoC was off by two orders of magnitude. Fixed grammar, added note about variable names and missing libraries.
