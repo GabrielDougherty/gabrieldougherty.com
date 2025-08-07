@@ -47,7 +47,7 @@ page = "" # Twitter Page username. If not set, params.social.twitter will be use
 github = "GabrielDougherty"
 email = "contact@gabrieldougherty.com"
 linkedin = "gabriel-dougherty"
-resume = "/docs/Gabriel_Dougherty_Resume.pdf"
+resume = "/docs/gabriel_dougherty_resume.pdf"
 rss = "index.xml" # Add this to show RSS button in social.
 
 [params.social.config]
