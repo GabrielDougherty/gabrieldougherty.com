@@ -7,6 +7,9 @@ copyright = "&copy; Gabriel Dougherty 2019-2025"
 googleAnalytics = "" # Add your GA4 measurement ID here (G-XXXXXXXXXX)
 Paginate = 5 # Number of posts per page
 enableRobotsTXT = true
+enableGitInfo = false # Disable git info for faster builds
+canonifyURLs = true
+enableEmoji = false # Disable emoji processing for speed
 
 [minify]
   disableCSS = false
@@ -15,6 +18,11 @@ enableRobotsTXT = true
   disableJSON = false
   disableSVG = false
   disableXML = false
+  [minify.tdewolff.html]
+    keepWhitespace = false
+  [minify.tdewolff.css]
+    keepCSS2 = true
+    precision = 0
 
 [sitemap]
 changefreq = "weekly"
@@ -28,6 +36,7 @@ authorEmail = "contact@gabrieldougherty.com" # Author email
 
 [params.assets]
 customCSS = ["css/minimal.css"]
+preload = ["css/critical.css"]
 
 [params.info]
 adsense = "" # Adsense ID (ID only, without ca-pub-)
@@ -38,6 +47,7 @@ poweredby = false # Adds powered by hugo and kiss below Copyright
 related = true # Includes related articles at the bottom of the article
 codeCopy = true # Add copy button above code blocks
 taxonomiesCount = true # Add taxonomies count
+dateFormat = "January 2, 2006" # Consistent date format
 
 [params.features]
 # disqusOnDemand = true  # Disabled along with Disqus
@@ -66,3 +76,15 @@ tag ="tags"
 
 [blackfriday]
 hrefTargetBlank = true
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+    [markup.goldmark.parser]
+      attribute = true
+      autoHeadingID = true
+  [markup.highlight]
+    style = "github"
+    lineNos = false
+    tabWidth = 2

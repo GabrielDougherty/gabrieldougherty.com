@@ -3,11 +3,24 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
+<!-- DNS prefetch for external resources -->
+<link rel="dns-prefetch" href="//fonts.googleapis.com">
+<link rel="dns-prefetch" href="//fonts.gstatic.com">
+<!-- Preload critical CSS asynchronously -->
+<link rel="preload" href="{{ "css/minimal.css" | absURL }}" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="{{ "css/minimal.css" | absURL }}"></noscript>
+<!-- Critical CSS inlined for immediate rendering -->
+<style>
+:root{--bg-color:#fff;--text-color:#42464c;--text-color-dark:#222324;--text-color-light:#69707a;--border-color:#d3d6db;--border-color-light:#e0e0e0;--link-color:#2077b2;--link-hover-color:#185a87;--code-bg:#f8f8f8;--pre-bg:#f5f7fa;--tag-bg:#f5f7fa;--heading-color:#b52323}@media (prefers-color-scheme:dark){:root{--bg-color:#1a1a1a;--text-color:#e4e4e7;--text-color-dark:#f4f4f5;--text-color-light:#a1a1aa;--border-color:#374151;--border-color-light:#4b5563;--link-color:#60a5fa;--link-hover-color:#93c5fd;--code-bg:#374151;--pre-bg:#1f2937;--tag-bg:#374151;--heading-color:#f87171}}*,*::before,*::after{box-sizing:border-box}html{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,sans-serif;font-size:14px;line-height:1.5;scroll-behavior:smooth}body{color:var(--text-color);background-color:var(--bg-color);font-size:1rem;line-height:1.4;margin:0;padding:0;overflow-x:hidden}.container{max-width:800px;margin:0 auto;padding:0 20px}.section{padding:20px 20px}.section:not(:first-of-type){padding-top:10px}.title{color:var(--text-color-dark);font-size:24px;font-weight:300;line-height:1.25;margin-bottom:20px}.title a{color:var(--text-color-dark);text-decoration:none}.title a:hover{border-bottom:1px solid}.subtitle{color:var(--text-color-light);font-size:18px;font-weight:300;margin-bottom:20px}.subtitle.is-6{font-size:14px}.nav{background-color:var(--bg-color);display:flex;align-items:stretch;min-height:50px;padding:0 20px}.nav-left{display:flex;align-items:stretch;flex-grow:1}.nav-item{display:flex;align-items:center;padding:10px}.nav-item a{color:var(--text-color);text-decoration:none}.nav-item a:hover{color:var(--text-color-dark)}.nav-right{display:flex;align-items:stretch;justify-content:flex-end}#nav-anchor{text-decoration:none}#nav-anchor:hover #nav-heading{text-decoration:underline}.content{font-size:16px;line-height:1.75}.content h1,.content h2,.content h3,.content h4,.content h5,.content h6{color:var(--heading-color);font-weight:300;margin-bottom:20px;margin-top:40px}.content h1{font-size:24px}.content h2{font-size:22px}.content h3{font-size:20px}.content p{margin-bottom:1.5em}.content a{color:var(--link-color);text-decoration:none;border-bottom:1px solid var(--border-color)}.content a:hover{border-bottom-color:var(--link-color)}@media screen and (max-width:768px){.container{padding:0 10px}.section{padding:20px 10px}.nav{padding:0 10px;flex-direction:column;align-items:center}.nav-left{justify-content:center;flex-grow:0;margin-bottom:10px}.nav-right{justify-content:center}}
+</style>
 {{ if eq .IsHome false }}<title>{{ .Title }} | {{ .Site.Title }}</title>{{ else }}<title>{{ .Site.Params.Info.homeTitle }}</title>{{ end }}
 {{- partial "head-seo" . -}}
 {{ if .Site.Params.Info.enableSocial }}{{- partial "social/opengraph" . -}}{{ end }}
 {{ if .Site.Params.rss }}<link href="{{ .Site.RSSLink }}" rel="alternate" type="application/rss+xml" title="{{ .Site.Title }}">{{ end }}
-{{- range .Site.Params.Assets.customCSS -}}<link rel='stylesheet' href='{{ . | absURL }}'>{{- end -}}
-<link rel="icon" href="/favicon-32x32.png">
+<!-- Optimized favicon loading -->
+<link rel="icon" href="/favicon-32x32.png" sizes="32x32">
+<link rel="icon" href="/favicon-16x16.png" sizes="16x16">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
 </head>
 <body>

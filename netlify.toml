@@ -1,17 +1,19 @@
 [build]
   publish = "public"
-  command = "hugo --minify"
+  command = "hugo --minify --gc"
 
 [context.production.environment]
-  HUGO_VERSION = "0.89.4"
+  HUGO_VERSION = "0.119.0"
   HUGO_ENV = "production"
+  HUGO_ENABLEGITINFO = "false"
 
 [context.deploy-preview.environment]
-  HUGO_VERSION = "0.89.4"
+  HUGO_VERSION = "0.119.0"
 
 [context.branch-deploy.environment]
-  HUGO_VERSION = "0.89.4"
+  HUGO_VERSION = "0.119.0"
 
+# Caching and compression headers for performance
 [[headers]]
   for = "/*"
   [headers.values]
@@ -19,13 +21,51 @@
     X-XSS-Protection = "1; mode=block"
     X-Content-Type-Options = "nosniff"
     Referrer-Policy = "strict-origin-when-cross-origin"
+    # Enable Brotli and Gzip compression
+    Content-Encoding = "br, gzip"
 
 [[headers]]
   for = "*.css"
   [headers.values]
-    Cache-Control = "public, max-age=31536000"
+    Cache-Control = "public, max-age=31536000, immutable"
+    Content-Type = "text/css; charset=utf-8"
 
 [[headers]]
   for = "*.js"
   [headers.values]
-    Cache-Control = "public, max-age=31536000"
+    Cache-Control = "public, max-age=31536000, immutable"
+    Content-Type = "application/javascript; charset=utf-8"
+
+# Long cache for images and static assets
+[[headers]]
+  for = "*.png"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "*.jpg"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "*.webp"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "*.svg"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+# Shorter cache for HTML files to allow for updates
+[[headers]]
+  for = "*.html"
+  [headers.values]
+    Cache-Control = "public, max-age=3600, must-revalidate"
+
+# Font caching
+[[headers]]
+  for = "*.woff2"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+    Content-Type = "font/woff2"
