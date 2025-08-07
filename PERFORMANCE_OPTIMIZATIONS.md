@@ -33,8 +33,9 @@ This document was AI generated. Feel free to ignore it.
 ### 5. Caching Strategy (Netlify)
 - **Static Assets**: 1-year cache with `immutable` directive
 - **HTML**: 1-hour cache with `must-revalidate`
-- **Compression**: Enabled Brotli and Gzip compression
+- **Compression**: Netlify handles Brotli and Gzip automatically
 - **Hugo Version**: Updated to 0.119.0 for better performance
+- **Security Headers**: Added proper security headers
 
 ### 6. CSS Architecture
 - **Split**: Separated critical from non-critical styles
@@ -91,6 +92,14 @@ This document was AI generated. Feel free to ignore it.
 - **Critical metrics**: First Contentful Paint, Largest Contentful Paint
 - **Tools**: Chrome DevTools Lighthouse, WebPageTest
 - **Frequency**: After each major content/design change
+
+## Troubleshooting
+
+### Content Encoding Error
+- **Issue**: "Content Encoding Error" on Netlify deployment
+- **Cause**: Manual Content-Encoding header conflicts with Netlify's automatic compression
+- **Fix**: Remove `Content-Encoding = "br, gzip"` from netlify.toml - Netlify handles compression automatically
+- **Status**: ✅ Fixed - Removed manual compression headers
 
 ## Future Optimizations
 
