@@ -4,9 +4,14 @@ title = "Gabriel Dougherty"
 theme = "kiss"
 copyright = "&copy; Gabriel Dougherty 2019-2023"
 # disqusShortname = "shortname"  # Commented out to disable Disqus
-googleAnalytics = ""
+googleAnalytics = "" # Add your GA4 measurement ID here (G-XXXXXXXXXX)
 Paginate = 5 # Number of posts per page
 enableRobotsTXT = true
+
+[sitemap]
+changefreq = "weekly"
+priority = 0.5
+filename = "sitemap.xml"
 
 [params.rss] # Adding this tag enables RSS feed
 includeContent = true # Includes whole content in rss
@@ -18,8 +23,9 @@ customCSS = ["css/custom.css"]
 
 [params.info]
 adsense = "" # Adsense ID (ID only, without ca-pub-)
-enableSocial = false # Adds OpenGraph and Twitter cards
-homeTitle = "Gabriel Dougherty" # Title for home page
+enableSocial = true # Adds OpenGraph and Twitter cards
+homeTitle = "Gabriel Dougherty - Software Engineer" # Title for home page
+description = "Gabriel Dougherty's blog - Software engineering, C++, CMake, and technical insights"
 poweredby = true # Adds powered by hugo and kiss below Copyright
 related = true # Includes related articles at the bottom of the article
 codeCopy = true # Add copy button above code blocks

@@ -1,6 +1,8 @@
 ---
 title: "Palate Cleanser Jiras"
 date: 2025-08-07T16:00:00-04:00
+description: "A productivity strategy for software engineers: using small 'palate cleanser' Jira tickets between larger tasks to maintain motivation and prevent burnout."
+tags: ["Productivity", "Software Engineering", "Jira", "Project Management"]
 ---
 
 

@@ -2,6 +2,8 @@
 title: "MacOS Big Sur 11.3: Change desktop background image for all desktops"
 date: 2021-05-01T14:08:40-04:00
 draft: false
+description: "Learn how to change the desktop background image for all MacOS Big Sur desktops at once using a working AppleScript solution when the built-in options don't work."
+tags: ["MacOS", "AppleScript", "Desktop", "Tutorial"]
 ---
 
 If you just want the solution, it's at the very bottom of this article.

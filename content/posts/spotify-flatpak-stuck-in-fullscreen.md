@@ -2,6 +2,8 @@
 title: "Spotify Flatpak Stuck in Fullscreen"
 date: 2022-05-02T12:53:27-04:00
 draft: false
+description: "How to fix Spotify Flatpak when it gets stuck in fullscreen mode on Linux by editing the sandboxed configuration file."
+tags: ["Linux", "Flatpak", "Spotify", "Troubleshooting", "Pop!_OS", "Configuration"]
 ---
 
 # Problem Explanation

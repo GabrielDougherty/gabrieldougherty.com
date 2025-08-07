@@ -2,6 +2,8 @@
 title: "Things That Surprised Me About CMake"
 date: 2023-07-23T14:53:32-04:00
 draft: false
+description: "Discover surprising aspects of CMake from a year of working on large C++ projects, including implicit includes, project reloading, and globally scoped targets."
+tags: ["CMake", "C++", "Build Systems", "Software Engineering"]
 ---
 
 # Intro
