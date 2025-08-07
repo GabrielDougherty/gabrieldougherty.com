@@ -3,7 +3,7 @@ languageCode = "en-us"
 title = "Gabriel Dougherty"
 theme = "kiss"
 copyright = "&copy; Gabriel Dougherty 2019-2023"
-disqusShortname = "shortname"
+# disqusShortname = "shortname"  # Commented out to disable Disqus
 googleAnalytics = ""
 Paginate = 5 # Number of posts per page
 enableRobotsTXT = true
@@ -26,7 +26,7 @@ codeCopy = true # Add copy button above code blocks
 taxonomiesCount = true # Add taxonomies count
 
 [params.features]
-disqusOnDemand = true  # Load Disqus comments on click
+# disqusOnDemand = true  # Disabled along with Disqus
 
 
 [params.opengraph.facebook]
