@@ -19,7 +19,7 @@ authorName = "Gabriel Dougherty" # Author full name
 authorEmail = "contact@gabrieldougherty.com" # Author email
 
 [params.assets]
-customCSS = ["css/custom.css"]
+customCSS = ["css/minimal.css"]
 
 [params.info]
 adsense = "" # Adsense ID (ID only, without ca-pub-)
