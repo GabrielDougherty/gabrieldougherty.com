@@ -8,6 +8,14 @@ googleAnalytics = "" # Add your GA4 measurement ID here (G-XXXXXXXXXX)
 Paginate = 5 # Number of posts per page
 enableRobotsTXT = true
 
+[minify]
+  disableCSS = false
+  disableHTML = false
+  disableJS = false
+  disableJSON = false
+  disableSVG = false
+  disableXML = false
+
 [sitemap]
 changefreq = "weekly"
 priority = 0.5
