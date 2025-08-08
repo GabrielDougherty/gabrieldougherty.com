@@ -8,7 +8,7 @@ googleAnalytics = "" # Add your GA4 measurement ID here (G-XXXXXXXXXX)
 Paginate = 5 # Number of posts per page
 enableRobotsTXT = true
 enableGitInfo = false # Disable git info for faster builds
-canonifyURLs = true
+canonifyURLs = false
 enableEmoji = false # Disable emoji processing for speed
 
 [minify]

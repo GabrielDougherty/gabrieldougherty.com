@@ -67,3 +67,18 @@
   [headers.values]
     Cache-Control = "public, max-age=31536000, immutable"
     Content-Type = "font/woff2"
+
+# Manifest file with CORS headers
+[[headers]]
+  for = "/site.webmanifest"
+  [headers.values]
+    Content-Type = "application/manifest+json"
+    Access-Control-Allow-Origin = "*"
+    Cache-Control = "public, max-age=86400"
+
+# Icon files with CORS headers for PWA
+[[headers]]
+  for = "*.ico"
+  [headers.values]
+    Access-Control-Allow-Origin = "*"
+    Cache-Control = "public, max-age=31536000, immutable"
