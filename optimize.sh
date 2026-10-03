@@ -15,10 +15,11 @@ if [ -f "public/index.html" ]; then
     echo "📊 Index page size: ${INDEX_SIZE} bytes"
 fi
 
-if [ -f "public/css/minimal.css" ]; then
-    CSS_SIZE=$(wc -c < public/css/minimal.css)
-    echo "📊 CSS file size: ${CSS_SIZE} bytes"
-fi
+for CSS_FILE in public/css/minimal.*.css; do
+    [ -f "$CSS_FILE" ] || continue
+    CSS_SIZE=$(wc -c < "$CSS_FILE")
+    echo "📊 CSS file size: ${CSS_SIZE} bytes ($CSS_FILE)"
+done
 
 echo "✅ Build complete! Run 'hugo server' to test locally."
 echo ""
